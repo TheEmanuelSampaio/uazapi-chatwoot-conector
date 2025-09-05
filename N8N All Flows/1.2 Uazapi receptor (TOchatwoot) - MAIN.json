@@ -122,7 +122,7 @@
           "filters": {
             "fields": [
               {
-                "field": 9366,
+                "field": "={{ 9366 }}",
                 "value": "={{ $('Workflow Trigger').item.json.body.token }}"
               }
             ]
@@ -458,7 +458,7 @@
       "parameters": {
         "operation": "update",
         "databaseId": "={{ $('Database Id').item.json.database }}",
-        "tableId": "={{ $('Database Id').item.json.field_log_inbox }}",
+        "tableId": "={{ $('Database Id').item.json.table_instance_chatwoot_config }}",
         "rowId": "={{ $('Workflow Trigger').item.json.body.items[0].id }}",
         "fieldsUi": {
           "fieldValues": [
@@ -807,7 +807,7 @@
         },
         "sendBody": true,
         "specifyBody": "json",
-        "jsonBody": "={\n  \"name\": \"{{ $('Workflow Trigger').item.json.body.old_items[0][\"Instance Name\"] }}\",\n  \"channel\": {\n    \"type\": \"api\",\n    \"webhook_url\": \"https://n8nwebhook.yearsinbox.com/webhook/yib-chatwoot-receptor-TOuazapi-PROD?installation_url={{ $('Workflow Trigger').item.json.body.items[0][\"Chatwoot URL\"][0].value }}\"\n  }  \n}",
+        "jsonBody": "={\n  \"name\": \"{{ $('Workflow Trigger').item.json.body.old_items[0][\"Instance Name\"] }}\",\n  \"channel\": {\n    \"type\": \"api\",\n    \"webhook_url\": \"{{ $env.WEBHOOK_URL }}webhook/yib-chatwoot-receptor-TOuazapi-PROD?installation_url={{ $('Workflow Trigger').item.json.body.items[0][\"Chatwoot URL\"][0].value }}\"\n  }  \n}",
         "options": {
           "allowUnauthorizedCerts": true
         }
@@ -939,7 +939,7 @@
     },
     {
       "parameters": {
-        "content": "# Inbox Control ______________________ Ativa/Desativa/Cria",
+        "content": "# Instance Controller ______________________ Ativa/Desativa/Cria/Edita Inbox",
         "height": 80,
         "width": 2912,
         "color": 4
@@ -1669,7 +1669,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "https://yearsinbox.uazapi.com/message/download",
+        "url": "={{ $('Nml - Instance Chatwoot Cached Data').item.json.instanceUrl }}/message/download",
         "sendHeaders": true,
         "headerParameters": {
           "parameters": [

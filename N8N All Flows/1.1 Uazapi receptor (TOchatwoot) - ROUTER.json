@@ -18,9 +18,9 @@
     },
     {
       "parameters": {
-        "content": "# Fontes dos Webhooks:\n\n## Baserow Webhook ---- /yib-baserow-instance-controller-PROD\n### Webhook \"Rows are updated\" das duas tabelas usadas na configuração da integração para as instâncias.\n\n## Uazapi Webhook ---- /yib-uazapi-receptor-TOchatwoot-PROD\n### Configurações do webhook para as instâncias da [Uazapi!](https://uazapi.dev/interno?p=conecte)",
+        "content": "# Fontes de entrada para o flow (fonte dos Webhooks)\n\n## Baserow Webhook ---- /yib-baserow-instance-controller-PROD\n### Webhook \"Rows are updated\" das duas tabelas usadas na configuração da integração para as instâncias.\n\n## Uazapi Webhook ---- /yib-uazapi-receptor-TOchatwoot-PROD\n### Configurações do webhook para as instâncias da [Uazapi!](https://uazapi.dev/interno?p=conecte)",
         "height": 288,
-        "width": 848,
+        "width": 896,
         "color": 5
       },
       "type": "n8n-nodes-base.stickyNote",

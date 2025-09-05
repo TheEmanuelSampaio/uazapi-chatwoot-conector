@@ -301,14 +301,14 @@
     },
     {
       "parameters": {
-        "databaseId": 228,
-        "tableId": 953,
+        "databaseId": "={{ 228 }}",
+        "tableId": "={{ 953 }}",
         "returnAll": true,
         "additionalOptions": {
           "filters": {
             "fields": [
               {
-                "field": 9379,
+                "field": "={{ 9379 }}",
                 "operator": "contains",
                 "value": "={{ $('Mrg - Input Data').item.json.extra.contac_inbox.inbox_id }}"
               }
@@ -712,48 +712,6 @@
     },
     {
       "parameters": {
-        "conditions": {
-          "options": {
-            "caseSensitive": true,
-            "leftValue": "",
-            "typeValidation": "strict",
-            "version": 2
-          },
-          "conditions": [
-            {
-              "id": "01734203-da2d-485d-9ff6-85d36442cfb6",
-              "leftValue": "={{ $('Uazapi - Send Media').item.json.error.message }}",
-              "rightValue": "not available",
-              "operator": {
-                "type": "string",
-                "operation": "contains"
-              }
-            },
-            {
-              "id": "dcba89a3-893b-46e6-b5d4-d3a53b1cafc3",
-              "leftValue": "={{ $runIndex }}",
-              "rightValue": 8,
-              "operator": {
-                "type": "number",
-                "operation": "gt"
-              }
-            }
-          ],
-          "combinator": "and"
-        },
-        "options": {}
-      },
-      "type": "n8n-nodes-base.if",
-      "typeVersion": 2.2,
-      "position": [
-        3344,
-        432
-      ],
-      "id": "6c76529a-f26b-4f98-99cc-f983e3b68c74",
-      "name": "Mídia não disponível ainda (8x)?"
-    },
-    {
-      "parameters": {
         "amount": 2
       },
       "type": "n8n-nodes-base.wait",
@@ -832,7 +790,7 @@
           "values": [
             {
               "key": "data",
-              "value": "={{ $('Redis - Queue Processor').item.json.lpopResult }}"
+              "value": "={{ $('Redis - Queue Processor').first().json.lpopResult }}"
             }
           ]
         }
@@ -1181,7 +1139,7 @@
           "__rl": true,
           "value": "x4Cb70667ZfvNf5m",
           "mode": "list",
-          "cachedResultName": "Uazapi Error Handler"
+          "cachedResultName": "3. Uazapi Error Handler"
         },
         "workflowInputs": {
           "mappingMode": "defineBelow",
@@ -1391,7 +1349,7 @@
           "__rl": true,
           "value": "PORwoJguuqvS9Qb4",
           "mode": "list",
-          "cachedResultName": "MAIN - Uzapi receptor (TOchatwoot)"
+          "cachedResultName": "1.2 Uzapi receptor (TOchatwoot) - ROUTER"
         },
         "workflowInputs": {
           "mappingMode": "defineBelow",
@@ -1653,6 +1611,116 @@
       "id": "6ab0e980-571a-48dc-b53e-5057b00b58f9",
       "name": "Redis - Queue Processor",
       "notes": "O fato de eu concatenar a entrada com a saída pode gerar loop se eu enviar o payload inteiro como input. Porque mesmo que o lmove não retorne nada, eu vou concatenar isso com o payload inteiro, então se for uma mensagem, vai enviá-la em loop."
+    },
+    {
+      "parameters": {
+        "content": "# ⚠️👉🏼 Substituir credenciais conforme tutorial",
+        "height": 96,
+        "width": 832,
+        "color": 3
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        416,
+        -816
+      ],
+      "typeVersion": 1,
+      "id": "0e29bb5b-387b-4502-9633-8643adf424bf",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {
+        "content": "# ⚠️👉🏼 Substituir credenciais conforme tutorial",
+        "height": 96,
+        "width": 832,
+        "color": 3
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        4272,
+        -800
+      ],
+      "typeVersion": 1,
+      "id": "b42886de-f7e7-4304-8802-cd07d9b01f3c",
+      "name": "Sticky Note1"
+    },
+    {
+      "parameters": {
+        "content": "## 👇🏼 SELECIONE\n## 👉🏼 Flow 3 👈🏼",
+        "height": 272,
+        "width": 208,
+        "color": 3
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        4752,
+        -208
+      ],
+      "typeVersion": 1,
+      "id": "cc126ccb-4ab4-4f3e-b6a5-03c49beed5eb",
+      "name": "Sticky Note2"
+    },
+    {
+      "parameters": {
+        "content": "## 👇🏼 SELECIONE\n## 👉🏼 Flow 1.2 👈🏼",
+        "height": 272,
+        "width": 208,
+        "color": 3
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        3552,
+        1056
+      ],
+      "typeVersion": 1,
+      "id": "26c95078-9007-4df5-bacc-9d91e4e0201f",
+      "name": "Sticky Note3"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        2800,
+        560
+      ],
+      "id": "93f561c2-b0db-4a3a-ba4a-21222f49a125",
+      "name": "Edit Fields"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "dcba89a3-893b-46e6-b5d4-d3a53b1cafc3",
+              "leftValue": "={{ $runIndex }}",
+              "rightValue": 8,
+              "operator": {
+                "type": "number",
+                "operation": "gt"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        3344,
+        432
+      ],
+      "id": "1cc829de-f71a-4524-86bb-d3b4a5988909",
+      "name": "Mídia não disponível ainda (8x)?"
     }
   ],
   "connections": {
@@ -1973,24 +2041,6 @@
         [
           {
             "node": "Mrg - Input Data",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Mídia não disponível ainda (8x)?": {
-      "main": [
-        [
-          {
-            "node": "Media unavaliable",
-            "type": "main",
-            "index": 0
-          }
-        ],
-        [
-          {
-            "node": "Wait 2s",
             "type": "main",
             "index": 0
           }
@@ -2355,6 +2405,24 @@
         [
           {
             "node": "Has Items?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Mídia não disponível ainda (8x)?": {
+      "main": [
+        [
+          {
+            "node": "Media unavaliable",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Wait 2s",
             "type": "main",
             "index": 0
           }
