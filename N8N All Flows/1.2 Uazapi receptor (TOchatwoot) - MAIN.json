@@ -3286,6 +3286,54 @@
       "executeOnce": true,
       "onError": "continueRegularOutput",
       "notes": "O execute Once evita bug de loop infinito. Cenário observado: Joson apenas com array (antes do node code)... cada item do array gerava um file dentro do Chatwoot!"
+    },
+    {
+      "parameters": {
+        "content": "# ⚠️👉🏼 Substituir credenciais conforme tutorial",
+        "height": 96,
+        "width": 832,
+        "color": 3
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -3504,
+        -944
+      ],
+      "typeVersion": 1,
+      "id": "9f1c63f8-1a61-43f8-97f9-aabec55cee07",
+      "name": "Sticky Note1"
+    },
+    {
+      "parameters": {
+        "content": "# ⚠️👉🏼 Substituir credenciais conforme tutorial",
+        "height": 96,
+        "width": 832,
+        "color": 3
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        160,
+        -928
+      ],
+      "typeVersion": 1,
+      "id": "89447e11-4e21-471e-b5bc-b9545e7ad355",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {
+        "content": "# ⚠️👉🏼 Substituir credenciais conforme tutorial",
+        "height": 96,
+        "width": 832,
+        "color": 3
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        5216,
+        -896
+      ],
+      "typeVersion": 1,
+      "id": "fb0bc136-3acd-46c7-9332-a01b311f3af6",
+      "name": "Sticky Note2"
     }
   ],
   "connections": {

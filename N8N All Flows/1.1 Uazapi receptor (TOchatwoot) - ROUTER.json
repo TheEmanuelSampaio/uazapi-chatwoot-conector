@@ -18,7 +18,7 @@
     },
     {
       "parameters": {
-        "content": "# Fontes de entrada para o flow:\n\n## Baserow Webhook ---- /yib-baserow-instance-controller-PROD\n### Webhook \"Rows are updated\" das duas tabelas usadas na configuração da integração para as instâncias.\n\n## Uazapi Webhook ---- /yib-uazapi-receptor-TOchatwoot-PROD\n### Configurações do webhook para as instâncias da [Uazapi!](https://uazapi.dev/interno?p=conecte)",
+        "content": "# Fontes dos Webhooks:\n\n## Baserow Webhook ---- /yib-baserow-instance-controller-PROD\n### Webhook \"Rows are updated\" das duas tabelas usadas na configuração da integração para as instâncias.\n\n## Uazapi Webhook ---- /yib-uazapi-receptor-TOchatwoot-PROD\n### Configurações do webhook para as instâncias da [Uazapi!](https://uazapi.dev/interno?p=conecte)",
         "height": 288,
         "width": 848,
         "color": 5
@@ -237,11 +237,27 @@
     },
     {
       "parameters": {
+        "content": "## 👇🏼 SELECIONE\n## 👉🏼 Flow 1.2 👈🏼",
+        "height": 272,
+        "width": 208,
+        "color": 3
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -48,
+        -960
+      ],
+      "typeVersion": 1,
+      "id": "55f8339b-9630-40bb-a96a-eaa869eee950",
+      "name": "Sticky Note1"
+    },
+    {
+      "parameters": {
         "workflowId": {
           "__rl": true,
           "value": "PORwoJguuqvS9Qb4",
           "mode": "list",
-          "cachedResultName": "MAIN - Uzapi receptor (TOchatwoot)"
+          "cachedResultName": "1.2 Uzapi receptor (TOchatwoot) - ROUTER"
         },
         "workflowInputs": {
           "mappingMode": "defineBelow",

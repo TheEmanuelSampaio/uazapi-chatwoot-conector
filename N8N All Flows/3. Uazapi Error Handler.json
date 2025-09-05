@@ -285,7 +285,7 @@
           "__rl": true,
           "value": "PORwoJguuqvS9Qb4",
           "mode": "list",
-          "cachedResultName": "MAIN - Uzapi receptor (TOchatwoot)"
+          "cachedResultName": "1.2 Uzapi receptor (TOchatwoot) - ROUTER"
         },
         "workflowInputs": {
           "mappingMode": "defineBelow",
@@ -442,7 +442,7 @@
           "__rl": true,
           "value": "PORwoJguuqvS9Qb4",
           "mode": "list",
-          "cachedResultName": "MAIN - Uzapi receptor (TOchatwoot)"
+          "cachedResultName": "1.2 Uzapi receptor (TOchatwoot) - ROUTER"
         },
         "workflowInputs": {
           "mappingMode": "defineBelow",
@@ -551,6 +551,54 @@
       ],
       "id": "9b9f4ccf-cf75-41c8-a5ae-3515dd615dfb",
       "name": "Data System Message (Chat Info)1"
+    },
+    {
+      "parameters": {
+        "content": "## 👇🏼 SELECIONE\n## 👉🏼 Flow 1.2 👈🏼",
+        "height": 272,
+        "width": 208,
+        "color": 3
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        2544,
+        288
+      ],
+      "typeVersion": 1,
+      "id": "a969421e-4b40-4626-bb5d-b94d63fec332",
+      "name": "Sticky Note2"
+    },
+    {
+      "parameters": {
+        "content": "## 👇🏼 SELECIONE\n## 👉🏼 Flow 2.2 👈🏼",
+        "height": 272,
+        "width": 208,
+        "color": 3
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        3360,
+        304
+      ],
+      "typeVersion": 1,
+      "id": "836792c6-2305-4622-b47b-98a1f0eeb26f",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {
+        "content": "## 👇🏼 SELECIONE\n## 👉🏼 Flow 1.2 👈🏼",
+        "height": 272,
+        "width": 208,
+        "color": 3
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        1376,
+        864
+      ],
+      "typeVersion": 1,
+      "id": "1942422f-e16d-4980-aa80-865dd70b6362",
+      "name": "Sticky Note3"
     }
   ],
   "connections": {

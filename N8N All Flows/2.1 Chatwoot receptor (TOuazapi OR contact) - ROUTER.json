@@ -577,6 +577,38 @@
       ],
       "id": "b4d88a10-45f1-4e9b-9e59-16037b30f480",
       "name": "Switch Processor"
+    },
+    {
+      "parameters": {
+        "content": "# Fonte de entrada para o flow (fonte do Webhook)\n\n## Chatwoot Inbox URL (Mensagens dos agentes e TODOS os eventos da conversa no inbox)!\n### Definição AUTOMÁTICA (ao criar novo inbox) realizada pelo instance controller do Flow 1.2!\n- /yib-chatwoot-receptor-TOuazapi-TEST?installation_url=http... ← 🚨 Link com parâmetro obtido automaticamente da interface de configuração (baserow) da integração para a instância",
+        "height": 272,
+        "width": 832,
+        "color": 5
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -688,
+        -224
+      ],
+      "typeVersion": 1,
+      "id": "830c3b13-0788-4f59-af23-28a18791a26d",
+      "name": "Sticky Note10"
+    },
+    {
+      "parameters": {
+        "content": "## 👇🏼 SELECIONE\n## 👉🏼 Flow 2.2 👈🏼",
+        "height": 272,
+        "width": 208,
+        "color": 3
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        1216,
+        -224
+      ],
+      "typeVersion": 1,
+      "id": "37a14a86-a6d3-452f-b16b-c8f892fc3dcb",
+      "name": "Sticky Note1"
     }
   ],
   "connections": {
